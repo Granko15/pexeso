@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  height: 90vh;
+  background: linear-gradient(-45deg, #2CD8D5, #924eff, #C5C1FF, #FFBAC3);
+  background: linear-gradient(-45deg, #FFE29F, #FFA99F, #2CD8D5, #FF719A);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+body header {
+  font-family: 'Potta One', cursive;
+  font-size: 3.5em;
+  color: black;
+  text-shadow: 2px 2px darkgoldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+body header #header-logo {
+  width: 400px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+body .restart {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+body .pexeso {
+  width: 1600px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .pexeso .karta {
+  width: 10%;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5%;
+  background: #eafff4;
+  background: goldenrod;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .pexeso .karta:hover {
+  cursor: pointer;
+}
+
+body .pexeso .karta:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+/*# sourceMappingURL=styles.css.map */

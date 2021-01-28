@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body{
+    height: 90vh;
+    background: linear-gradient(-45deg,#2CD8D5,#924eff,#C5C1FF,#FFBAC3);  
+    background: linear-gradient(-45deg, #FFE29F, #FFA99F,#2CD8D5, #FF719A);
+    //background: linear-gradient(-45deg,#ff7017,#ff4747, #924eff,#f003c3);  
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    header{
+        font-family: 'Potta One', cursive;
+        font-size: 3.5em;
+        color: black;
+        text-shadow: 2px 2px darkgoldenrod;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        #header-logo{
+            width:400px;
+            height: 100px;
+            margin-left: 10px;
+        }
+    }
+    .restart{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+    .pexeso{
+        width: 1600px;
+        height: 700px;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .karta{
+            width: 10%;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 5%;
+            background:#eafff4;
+            background: goldenrod;
+            transform: scale(1);
+            &:active{
+                transform: scale(.97);
+                transition: transform .2s;
+            }
+
+        }
+
+    }
+    
+}
+
+
+
+
+
